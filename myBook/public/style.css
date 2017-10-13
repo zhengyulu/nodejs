@@ -1,0 +1,27 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-13 14:47:34
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-13 14:47:50
+*/
+.title{
+	text-align: center;
+	background: lightgreen;
+	height: 50px;
+	line-height: 50px;
+}
+.content{
+	background: lightblue;
+}
+.content table{
+	width: 100%;
+	text-align: center;
+	border-right: 1px solid orange;
+	border-bottom: 1px solid orange;
+}
+.content td,th{
+	border-left: 1px solid orange;
+	border-top: 1px solid orange;
+	height: 40px;
+	line-height: 40px;
+}

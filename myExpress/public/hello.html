@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+
+		$(function(){
+			$('#btn').click(function(){
+				//$('form:eq(0)').serialize()
+				$.ajax({
+					url: 'http://localhost:3000/login',
+					type: 'get',
+					dataType: 'text',
+					data: $('form:eq(0)').serialize(),
+					success:function(data){
+						console.log(data);
+					}
+				})
+
+				//以json格式传参  ,要加上contentType:'application/json'
+				var obj={
+					username:$('#username').val(),
+					password:$('#password').val()
+				}
+				$.ajax({
+					url: 'http://localhost:3000/login',
+					type: 'get',
+					contentType:'application/json',
+					dataType: 'text',
+					data: JSON.stringify(obj),
+					success:function(data){
+						console.log(data);
+					}
+				})
+			})
+			
+		})
+
+	</script>
+</head>
+<body>
+	<form action="http://localhost:3000/login" method="post">
+		<input type="text" name='loginName' id="username"><br>
+		<input type="text" name='password' id="password"><br>
+		<input type="button" id="btn" value="提交">
+		<!-- <input type="submit" value="提交"> -->
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加图书</title>
+</head>
+<body>
+	<div>添加图书</div><br>
+	<form action="/addBook" method="post">
+		名称：<input type="text" name="name"><br>
+		作者：<input type="text" name="author"><br>
+		<input type="submit" value="按钮">
+	</form>
+</body>
+</html>
