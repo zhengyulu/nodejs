@@ -1,13 +1,1 @@
-[{
-	"id":"1",
-	"name":"三国演义",
-	"author":"罗贯中"
-},{
-	"id":"2",
-	"name":"三国演义",
-	"author":"罗贯中"
-},{
-	"id":"3",
-	"name":"三国演义",
-	"author":"罗贯中"
-}]
+[{"id":"1","name":"a2","author":"b2","_locals":{}},{"id":"2","name":"三国演义","author":"罗贯中"},{"id":"3","name":"三国演义","author":"罗贯中"},{"name":"wdw111","author":"ewr111","id":"4","_locals":{}}]
